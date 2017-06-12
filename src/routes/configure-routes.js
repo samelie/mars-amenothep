@@ -7,7 +7,7 @@ import AlysMarsPage from '../containers/alys-mars-page/alys-mars-page';
 
 export default function configureRoutes() {
   return (
-    <Route path="/" component={App}>
+    <Route path="/mars-amenothep" component={App}>
       <IndexRoute component={HomePage}/>
       <Route path="ackack" component={AlysMarsPage}/>
     </Route>
