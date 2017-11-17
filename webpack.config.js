@@ -106,7 +106,7 @@ module.exports = env => {
     plugins: removeEmpty([
       new webpack.DefinePlugin({
         'process.env': {
-          APP_DOMAIN: '"/sculpture"',
+          APP_DOMAIN: '"*"',
           ASSETS_DIR: '""',
           REMOTE_ASSETS_DIR: '"https://storage.googleapis.com/samrad-mars/www-assets/"'
         }
