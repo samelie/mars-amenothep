@@ -14,9 +14,7 @@ import FastClick from 'fastclick';
 FastClick.attach(document.body);
 
 // Configure store and routes
-const browserHistory = useRouterHistory(createHistory)({
-  basename: process.env.APP_DOMAIN
-});
+const browserHistory = useRouterHistory(createHistory)();
 
 const store = configureStore({
   browserHistory,
