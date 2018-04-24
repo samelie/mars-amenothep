@@ -55,7 +55,7 @@ module.exports = env => {
       vendor: ['react', 'react-dom', 'lodash']
     },
     output: {
-      filename: 'bundle.[name].[chunkhash].js',
+      filename: 'bundle.[name].js',
       //publicPath:'/',
       path: constants.DIST,
       pathinfo: !env.prod,
@@ -115,7 +115,7 @@ module.exports = env => {
       new HtmlWebpackPlugin({
         template: './index.html'
       }),
-      ifProd(new ExtractTextPlugin('[name]-[hash].css', {
+      ifProd(new ExtractTextPlugin('main.css', {
         allChunks: true
       })),
       ifProd(new webpack.optimize.DedupePlugin()),
