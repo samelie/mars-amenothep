@@ -56,6 +56,7 @@ module.exports = env => {
     },
     output: {
       filename: 'bundle.[name].[chunkhash].js',
+      //publicPath:'/',
       path: constants.DIST,
       pathinfo: !env.prod,
     },

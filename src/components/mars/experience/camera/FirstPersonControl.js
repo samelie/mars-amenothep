@@ -38,7 +38,7 @@ class FirstPersonControl {
         this._rx = new EaseNumber(0);
         this._rx.limit(-Math.PI / 2, Math.PI / 2);
         this._ry = new EaseNumber(0);
-        //this._ry.limit(0, TAO)
+        this._ry.limit(-Math.PI / 2, Math.PI / 2);
         this._preRX = 0;
         this._preRY = 0;
 
